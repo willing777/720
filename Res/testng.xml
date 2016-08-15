@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="TestNg">
+    <classes>
+      <class name="spctest.com.wy429.LoginTest">
+          <methods>  
+                <exclude name="login_1"></exclude>  
+                <exclude name="login_2"></exclude>  
+                <exclude name="login_3"></exclude>  
+                <include name="login_4"></include>  
+          </methods>   
+        </class>  
+     </classes>
+  </test> <!-- TestNg -->
+</suite> <!-- Suite -->

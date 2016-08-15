@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" skipfailedinvocationcounts="true" parallel="classes">
+  <test name="Test(failed)" parallel="classes">
+    <classes>
+      <class name="spctest.com.pageAction.NewRoleTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- spctest.com.pageAction.NewRoleTest -->
+      <class name="spctest.com.pageAction.NewProjectTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="f"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- spctest.com.pageAction.NewProjectTest -->
+      <class name="spctest.com.pageAction.PermissionTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- spctest.com.pageAction.PermissionTest -->
+      <class name="spctest.com.pageAction.DataImportTest">
+        <methods>
+          <include name="deleteData"/>
+          <include name="dataImport"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- spctest.com.pageAction.DataImportTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

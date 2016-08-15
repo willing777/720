@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DataImport" thread-count="2" parallel="tests" configfailurepolicy="continue"
+skipfailedinvocationcounts="true" preserve-order="true">
+<listeners>
+<listener class-name="com.netease.qa.testng.TestResultListener" />
+<listener class-name="com.netease.qa.testng.RetryListener" />
+<listener class-name="com.netease.qa.testng.PowerEmailableReporter" />
+    </listeners>
+  <test name="Dataimport Test">
+    <classes>
+      <class name="spctest.com.pageAction.DataImportTest">
+         <methods>
+              <include name="dataImport"/>
+              
+              <exclude name="deleteData"/>     
+          </methods>
+         </class>
+    </classes>
+  </test> <!-- DataImport Test -->
+</suite> <!-- DataImport Suite -->
